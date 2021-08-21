@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito" ,sans-serif;
+}
+
+body {
+  background: url(./Assets/BgDesk1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.glass {
+  height: 60vh;
+  width: 60vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(204, 0, 255, 0.6)), to(rgba(255, 0, 179, 0.1)));
+  background: linear-gradient(to bottom right, rgba(204, 0, 255, 0.6), rgba(255, 0, 179, 0.1));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border-radius: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: -5rem;
+  letter-spacing: 1rem;
+}
+
+.counter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.counter-container p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.counter-container span {
+  font-size: 1.5rem;
+}
+
+.counter-el {
+  padding: 2rem;
+}
+
+input {
+  text-align: center;
+  font-family: "Nunito" ,sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.input-container {
+  position: relative;
+  bottom: -3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-container label {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 590px) {
+  .counter-container p {
+    font-size: 2rem;
+    margin: 0;
+  }
+  h1, label, .counter-el {
+    padding: 0;
+    font-size: 2rem;
+  }
+  .counter-container span {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  .input-container label {
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+  input {
+    font-size: 1.2rem;
+  }
+  .glass {
+    padding: 20px;
+    width: 40vh;
+    height: 60vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
