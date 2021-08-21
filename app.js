@@ -23,13 +23,19 @@ function countDown() {
 
 
 
-    daysEl.innerHTML = days;
-    hoursEl.innerHTML = hours;
-    minsEl.innerHTML = mins;
-    secsEl.innerHTML = secs;
+    daysEl.innerHTML = formatter(days);
+    hoursEl.innerHTML = formatter(hours);
+    minsEl.innerHTML = formatter(mins);
+    secsEl.innerHTML = formatter(secs);
 
 
 }
 countDown();
 setInterval(countDown, 1000)
 
+function formatter(time) {
+    if (time < 10) {
+        time = `0${time}`;
+    }
+    return time;
+}
